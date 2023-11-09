@@ -62,7 +62,7 @@ FreqSamp = 1000 ;
 
 tic
 %%
-for iP=20:length(Participants)
+for iP=1:16 %length(Participants)
     disp(Participants{iP})
     
     Activity_WK = [] ;
@@ -121,7 +121,7 @@ for iP=20:length(Participants)
         end
         
     end
-    save(['/Users/tracy/Desktop/UdeM/Activity_WK/' Participants{iP} '_Activity_WK'],'Activity_WK');
+    save(['/Users/tracy/Desktop/UdeM/Activity_WK/' Participants{iP} '_Activity_WK'],'Activity_WK')
 
 end
 
